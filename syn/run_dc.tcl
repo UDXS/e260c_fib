@@ -46,7 +46,7 @@ set_host_options -max_cores 6
 # read RTL
 set rtl_files [glob $rtlPath/*.sv]
 foreach fi [lsearch -glob -all $rtl_files $rtlPath/*_tb.sv] {set rtl_files [lset rtl_files $fi ""]}
-analyze -format verilog -lib WORK $rtl_files
+analyze -format sverilog -lib WORK $rtl_files
 
 elaborate $top_module -lib WORK -update
 current_design $top_module
