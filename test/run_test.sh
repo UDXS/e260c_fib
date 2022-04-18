@@ -5,5 +5,5 @@ xrun \
 +xmstatus \
 +xmtimescale+1ns/1ps \
 +xmoveride_timescale \
--v ../rtl/fib.sv \
-../rtl/fib_tb.sv
+-v rtl/fib.sv \
+/rtl/fib_tb.sv
