@@ -27,7 +27,7 @@ module fibonacci_tb ();
         $display ("D. Markarian, 2022");
         $display("======");
 
-        tab_file = $fopen("../test/table.txt");
+        tab_file = $fopen("test/table.txt");
         for(i = 0; i < 24; i++) begin
             $fscanf(tab_file, "%d", fib_tab[i]);
         end
