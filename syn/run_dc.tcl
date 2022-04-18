@@ -3,7 +3,7 @@ set design_name fib
 set rtlPath "../rtl"
 
 # Target library
-set target_library /home/linux/ieng6/ee260csp22/public/FreePDK45/osu_soc/lib/files/gscl45nm.db
+set target_library /home/linux/ieng6/ee260csp22/public/data/libraries/db/tcbn65gpluswc.db
 set link_library $target_library
 set symbol_library {}
 set wire_load_mode enclosed
