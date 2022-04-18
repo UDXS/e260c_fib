@@ -55,7 +55,7 @@ module fibonacci_tb ();
                 clock_ctr = clock_ctr + 1;
             end
 
-            $display ("%d-th Fibonacci: E(%d) ?= %d. t = %d cycles.", i, fib_tab[i], fibo_out, clock_ctr);
+            $display ("%d-th Fibonacci: E(%d) ?= %d. t = %d cycles.", i+1, fib_tab[i], fibo_out, clock_ctr);
             if(fib_tab[i] ==  fibo_out)
                 $display("\t- PASS");
             else
