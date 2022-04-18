@@ -1,4 +1,4 @@
-set clk_period 1.0
+set clk_period 0.5
 set io_delay 0.2 
 
 create_clock -name clk -period $clk_period [get_ports clk]
