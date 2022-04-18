@@ -31,7 +31,7 @@ module fibonacci_tb ();
         for(i = 0; i < 24; i++) begin
             $fscanf(tab_file, "%d", fib_tab[i]);
         end
-        for (i = 0; i < 24; i++) begin
+        for (i = 1; i <= 24; i++) begin
 
             #1 clk = 1;
             #1 clk = 0;
@@ -55,8 +55,8 @@ module fibonacci_tb ();
                 clock_ctr = clock_ctr + 1;
             end
 
-            $display ("%d-th Fibonacci: E(%d) ?= %d. t = %d cycles.", i+1, fib_tab[i], fibo_out, clock_ctr);
-            if(fib_tab[i] ==  fibo_out)
+            $display ("%d-th Fibonacci: E(%d) ?= %d. t = %d cycles.", i, fib_tab[i-1], fibo_out, clock_ctr);
+            if(fib_tab[i-1] ==  fibo_out)
                 $display("\t- PASS");
             else
                 $display("\t- FAIL");
