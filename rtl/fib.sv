@@ -31,7 +31,7 @@ module fibonacci_calculator (
 						n <= 16'd1;
 					end else begin
 						state <= WORKING;
-						ctr <= input_s - 5'd2;
+						ctr <= input_s - 5'd3;
 					end
 				end
 			end
