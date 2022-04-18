@@ -42,6 +42,7 @@ module fibonacci_calculator (
 				if(ctr == 0)
 					state <= DONE;
 			end
+			DONE:;
 		endcase
 
 				
